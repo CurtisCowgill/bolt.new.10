@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Log</title>
+</head>
+<body>
+    <h1>Error Log</h1>
+    <div id="error-log"></div>
+    <script>
+        window.onerror = function(message, source, lineno, colno, error) {
+            var errorLog = document.getElementById('error-log');
+            errorLog.innerHTML += '<p>Error: ' + message + '<br>Source: ' + source + '<br>Line: ' + lineno + ', Column: ' + colno + '</p>';
+            return false;
+        };
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

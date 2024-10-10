@@ -1,0 +1,6 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Add this to ensure Leaflet styles are applied */
+@import 'leaflet/dist/leaflet.css';
